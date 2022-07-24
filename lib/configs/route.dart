@@ -1,4 +1,4 @@
-import 'package:get/get.dart';
+import 'package:get/get.dart'; 
 // import 'package:get_storage/get_storage.dart';
 // import 'package:learn1/configs/index.dart';
 import 'package:learn1/pages/index.dart';
@@ -13,7 +13,8 @@ abstract class RouteName {
   static const basicTypoMarkdown = '/basic/typo/markdown';
 
   static const basicButton = '/basic/button';
-  static const basicButtonBase = '/basic/button/base';
+  static const basicButtonStandart = '/basic/button/standart';
+  static const basicButtonPill = '/basic/button/pill';
 }
 
 class AppRoute {
@@ -41,14 +42,17 @@ class AppRoute {
       name: RouteName.basicTypoBase,
       page: () => const TypoBasePage(),
     ),
-
-     GetPage(
+    GetPage(
       name: RouteName.basicButton,
       page: () => const MainMenuButton(),
     ),
     GetPage(
-      name: RouteName.basicButtonBase,
-      page: () => const ButtonBasePage(),
+      name: RouteName.basicButtonStandart,
+      page: () => const ButtonStandartPage(),
+    ),
+     GetPage(
+      name: RouteName.basicButtonPill,
+      page: () => const ButtonPillPage(),
     ),
   ];
 }

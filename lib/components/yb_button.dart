@@ -8,6 +8,7 @@ class YbButton extends StatelessWidget {
       this.textButton,
       this.onPressed,
       this.textColor,
+      this.icon,
       this.size = GFSize.MEDIUM,
       this.color = YbColor.primary,
       this.type = GFButtonType.solid,
@@ -22,6 +23,7 @@ class YbButton extends StatelessWidget {
   final Color? textColor;
 
   final double size;
+  final Widget? icon;
 
   @override
   Widget build(BuildContext context) {
@@ -33,6 +35,7 @@ class YbButton extends StatelessWidget {
       type: type,
       textColor: textColor,
       size: size,
+      icon: icon,
     );
   }
 }

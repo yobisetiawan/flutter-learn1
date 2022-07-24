@@ -14,12 +14,17 @@ class MainMenuButton extends StatelessWidget {
       body: ListView(
         children: [
           ListTile(
-            title: const Text('Base Button'),
+            title: const Text('Button Standart'),
             onTap: () {
-              Get.toNamed(RouteName.basicButtonBase);
+              Get.toNamed(RouteName.basicButtonStandart);
             },
           ),
-           
+          ListTile(
+            title: const Text('Button Pill'),
+            onTap: () {
+              Get.toNamed(RouteName.basicButtonPill);
+            },
+          ),
         ],
       ),
     );
