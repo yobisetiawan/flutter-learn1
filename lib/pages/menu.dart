@@ -30,6 +30,12 @@ class MainMenu extends StatelessWidget {
             onTap: () {
               Get.toNamed(RouteName.basicButton);
             },
+          ),
+           ListTile(
+            title: const Text('Avatar'),
+            onTap: () {
+              Get.toNamed(RouteName.basicAvatar);
+            },
           )
         ],
       ),

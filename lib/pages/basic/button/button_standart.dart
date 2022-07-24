@@ -93,7 +93,10 @@ class ButtonStandartPage extends StatelessWidget {
           YbButton(
             textButton: 'Button Icon',
             onPressed: () {},
-            icon: const Icon(Icons.save, color: YbColor.white),
+            icon: const Icon(
+              Icons.save,
+              color: YbColor.white,
+            ),
           ),
         ],
       ),

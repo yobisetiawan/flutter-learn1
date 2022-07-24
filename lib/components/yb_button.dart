@@ -9,9 +9,11 @@ class YbButton extends StatelessWidget {
       this.onPressed,
       this.textColor,
       this.icon,
+      this.isIconOnly = false,
       this.size = GFSize.MEDIUM,
       this.color = YbColor.primary,
       this.type = GFButtonType.solid,
+      this.iconShape = GFIconButtonShape.standard,
       this.shape = GFButtonShape.standard})
       : super(key: key);
 
@@ -24,9 +26,21 @@ class YbButton extends StatelessWidget {
 
   final double size;
   final Widget? icon;
+  final bool isIconOnly;
+  final GFIconButtonShape iconShape;
 
   @override
   Widget build(BuildContext context) {
+    if (isIconOnly && icon != null) {
+      return GFIconButton(
+        icon: icon!,
+        color: color,
+        onPressed: onPressed,
+        shape: iconShape,
+        type: type,
+        size: size,
+      );
+    }
     return GFButton(
       onPressed: onPressed,
       text: textButton,

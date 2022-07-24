@@ -1,4 +1,4 @@
-import 'package:get/get.dart'; 
+import 'package:get/get.dart';
 // import 'package:get_storage/get_storage.dart';
 // import 'package:learn1/configs/index.dart';
 import 'package:learn1/pages/index.dart';
@@ -15,6 +15,9 @@ abstract class RouteName {
   static const basicButton = '/basic/button';
   static const basicButtonStandart = '/basic/button/standart';
   static const basicButtonPill = '/basic/button/pill';
+  static const basicButtonIconOnly = '/basic/button/icon-only';
+
+  static const basicAvatar = '/basic/avatar';
 }
 
 class AppRoute {
@@ -50,9 +53,17 @@ class AppRoute {
       name: RouteName.basicButtonStandart,
       page: () => const ButtonStandartPage(),
     ),
-     GetPage(
+    GetPage(
       name: RouteName.basicButtonPill,
       page: () => const ButtonPillPage(),
+    ),
+    GetPage(
+      name: RouteName.basicButtonIconOnly,
+      page: () => const ButtonIconOnlyPage(),
+    ),
+    GetPage(
+      name: RouteName.basicAvatar,
+      page: () => const AvatarPage(),
     ),
   ];
 }

@@ -7,3 +7,6 @@ export 'basic/typography/typo_base.dart';
 export 'basic/button/menu.dart';
 export 'basic/button/button_standart.dart';
 export 'basic/button/button_pill.dart';
+export 'basic/button/button_icon_only.dart';
+
+export 'basic/avatar.dart';

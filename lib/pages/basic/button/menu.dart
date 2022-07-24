@@ -25,6 +25,12 @@ class MainMenuButton extends StatelessWidget {
               Get.toNamed(RouteName.basicButtonPill);
             },
           ),
+          ListTile(
+            title: const Text('Button Icon Only'),
+            onTap: () {
+              Get.toNamed(RouteName.basicButtonIconOnly);
+            },
+          ),
         ],
       ),
     );
